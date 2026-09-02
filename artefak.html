@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Artefak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#f472b6', darkbg: '#181116' } } }
+        }
+    </script>
+</head>
+<body class="bg-pink-50/40 text-slate-800 dark:bg-darkbg dark:text-slate-200">
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12" data-aos="fade-up">Artefak Pembelajaran PPG</h2>
+
+            <!-- 2 Utama Card: Semester 1 & Semester 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Card Semester 1 -->
+                <a href="semester1.html" class="glass card-hover rounded-3xl p-8 border border-pink-200 block group" data-aos="fade-right">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 text-2xl font-bold">01</span>
+                        <i class="fas fa-arrow-right text-pink-400 group-hover:translate-x-2 transition-transform text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-pink-700 dark:text-pink-300">Semester 1</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Refleksi Pengalaman Belajar.</p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-pink-100 pt-4">
+                        <li>• Filosofi Pendidikan dan Pendidikan Nilai</li>
+                        <li>• Pembelajaran Mendalam & Asesmen Dasar</li>
+                        <li>• Pemahaman Peserta Didik & Pembelajaran</li>
+                        <li>• Computational Thinking & PPL Terbimbing</li>
+                        <li>• Pola Pikir Bertumbuh (Growth Mindset)</li>
+                        <li>• PPL Terbimbing</li>
+                    </ul>
+                </a>
+
+                <!-- Card Semester 2 -->
+                <a href="semester2.html" class="glass card-hover rounded-3xl p-8 border border-pink-200 block group" data-aos="fade-left">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 text-2xl font-bold">02</span>
+                        <i class="fas fa-arrow-right text-pink-400 group-hover:translate-x-2 transition-transform text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-pink-700 dark:text-pink-300">Semester 2</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Refleksi Pengalaman Belajar.</p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-pink-100 pt-4">
+                        <li>• Etika & Profesionalisme Guru</li>
+                        <li>• Proyek Kepemimpinan</li>
+                        <li>• Seminar Pendidikan Profesi Guru</li>
+                        <li>• Pembelajaran Mendalam & Asesmen Lanjut</li>
+                        <li>• Pembelajaran Sosial Emosional</li>
+                        <li>• PPL Mandiri</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

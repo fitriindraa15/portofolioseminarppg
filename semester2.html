@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artefak | Semester 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#f472b6', darkbg: '#181116' } } } }
+    </script>
+</head>
+<body class="bg-pink-50/40 text-slate-800 dark:bg-darkbg dark:text-slate-200">
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8 flex items-center justify-between">
+                <h2 class="text-3xl font-bold text-pink-700">Mata Kuliah Semester 2</h2>
+                <a href="artefak.html" class="text-sm font-semibold text-pink-500 hover:underline">
+                    <i class="fas fa-arrow-left mr-1"></i> Kembali ke Artefak
+                </a>
+            </div>
+
+            <!-- 6 Card Mata Kuliah Semester 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Etika & Profesionalisme Guru -->
+                <a href="matkul-s2-etika.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-user-shield text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Etika & Profesionalisme Guru</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Penerapan kode etik keguruan dan pengembangan standar kompetensi pendidik profesional.</p>
+                </a>
+
+                <!-- 2. Proyek Kepemimpinan -->
+                <a href="matkul-s2-proyek-kepemimpinan.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-users-cog text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Proyek Kepemimpinan</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Rancangan dan pelaksanaan proyek pelayanan masyarakat berorientasi inovasi edukatif.</p>
+                </a>
+
+                <!-- 3. Seminar Pendidikan Profesi Guru -->
+                <a href="matkul-s2-seminar.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Seminar Pendidikan Profesi Guru</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Diseminasi hasil penelitian tindakan kelas (PTK) dan sintesis pengalaman mengajar.</p>
+                </a>
+
+                <!-- 4. Pembelajaran Mendalam & Asesmen Lanjut -->
+                <a href="matkul-s2-pembelajaran-asesmen.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-chart-line text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Pembelajaran Mendalam & Asesmen Lanjut</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Evaluasi instrumen penilaian komprehensif dan efektivitas strategi instruksional lanjutan.</p>
+                </a>
+
+                <!-- 5. Pembelajaran Sosial Emosional -->
+                <a href="matkul-s2-pse.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-heart text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Pembelajaran Sosial Emosional</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Implementasi kompetensi sosial emosional (CASEL) dalam pengelolaan kelas.</p>
+                </a>
+
+                <!-- 6. PPL Mandiri -->
+                <a href="matkul-s2-ppl.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-school text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">PPL Mandiri</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Pelaksanaan praktik mengajar secara independen serta pengelolaan asesmen kelas secara penuh.</p>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

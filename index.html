@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio PPG | Beranda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f472b6',
+                        secondary: '#fb7185',
+                        softpink: '#fce7f3',
+                        pastelbg: '#fff5f8',
+                        darkbg: '#181116',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animasi Melayang Halus untuk Ornamen Latar Belakang */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-14px) rotate(5deg); }
+        }
+        @keyframes floatMedium {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(-6deg); }
+        }
+        .animate-float-1 { animation: floatSlow 6s ease-in-out infinite; }
+        .animate-float-2 { animation: floatMedium 8s ease-in-out infinite; }
+        .animate-float-3 { animation: floatSlow 7s ease-in-out infinite 2s; }
+    </style>
+</head>
+<body class="bg-[#fff5f8] text-slate-800 dark:bg-darkbg dark:text-slate-200 transition-colors duration-300 min-h-screen relative overflow-x-hidden">
+    
+    <!-- LOADER -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center pointer-events-none">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <!-- NAVBAR PLACEHOLDER (Z-INDEX TINGGI AGAR DAPAT DIKLIK DENGAN LANCHAR) -->
+    <div id="navbar-placeholder" class="relative z-[50]"></div>
+
+    <!-- DEKORASI BACKGROUND AESTHETIC PASTEL (POINTER-EVENTS-NONE Z-0) -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <!-- Lingkaran Hiasan Soft Pastel Background -->
+        <div class="absolute -top-20 -left-20 w-[30rem] h-[30rem] bg-pink-200/40 dark:bg-pink-950/20 rounded-full border border-pink-300/30"></div>
+        <div class="absolute top-1/3 -right-28 w-[36rem] h-[36rem] bg-rose-200/35 dark:bg-rose-950/20 rounded-full border border-pink-300/30"></div>
+        <div class="absolute -bottom-28 left-1/3 w-[32rem] h-[32rem] bg-pink-200/35 dark:bg-pink-950/20 rounded-full border border-pink-300/30"></div>
+
+        <!-- Icon Edukasi & Teknologi Pastel Melayang -->
+        <div class="absolute top-32 left-[6%] text-pink-300 dark:text-pink-500/30 text-5xl animate-float-1"><i class="fas fa-graduation-cap"></i></div>
+        <div class="absolute top-44 right-[8%] text-pink-300 dark:text-pink-500/30 text-6xl animate-float-2"><i class="fas fa-laptop-code"></i></div>
+        <div class="absolute bottom-36 left-[7%] text-pink-300 dark:text-rose-500/30 text-5xl animate-float-3"><i class="fas fa-book-open"></i></div>
+        <div class="absolute bottom-24 right-[10%] text-pink-300 dark:text-pink-500/30 text-6xl animate-float-1"><i class="fas fa-award"></i></div>
+        <div class="absolute top-1/2 left-[3%] text-pink-300/60 dark:text-pink-500/20 text-4xl animate-float-2"><i class="fas fa-lightbulb"></i></div>
+        <div class="absolute top-1/3 right-[4%] text-pink-300/60 dark:text-rose-500/20 text-4xl animate-float-3"><i class="fas fa-brain"></i></div>
+    </div>
+
+    <!-- MAIN CONTENT BERANDA DALAM KEMASAN CARD MODERN & ELEGAN -->
+    <main class="relative z-10 pt-28 pb-16 min-h-[calc(100vh-80px)] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            
+            <!-- MAIN HERO CARD CONTAINER -->
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 sm:p-10 lg:p-12 border border-pink-200/80 dark:border-slate-800 shadow-xl shadow-pink-100/50 dark:shadow-none" data-aos="fade-up">
+                
+                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+                    
+                    <!-- FOTO PROFIL BULAT DENGAN WAJAH LEBIH KE ATAS DAN PAS DI TENGAH -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[24rem] lg:h-[24rem] flex-shrink-0 group">
+                        <!-- Ring Accent Glowing Soft -->
+                        <div class="absolute -inset-3 bg-gradient-to-r from-pink-300 to-rose-300 dark:from-pink-800 dark:to-rose-800 rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                        
+                        <!-- Inner Circular Frame -->
+                        <div class="relative w-full h-full rounded-full overflow-hidden border-8 border-white dark:border-slate-800 shadow-2xl bg-pink-100 flex items-center justify-center">
+                            <!-- Direct URL Foto Beranda - Zoom (scale-150) & Posisi Fokus Ditarik Lebih Ke Atas (object-[center_15%]) -->
+                            <img src="https://lh3.googleusercontent.com/d/1o4imHXiZVbew6YZeHOu-ITvXihiyFmEj" 
+                                 alt="Foto Beranda Fitri Indra Kusumaningtyas" 
+                                 class="w-full h-full object-cover object-[center_15%] scale-150 transition duration-500 group-hover:scale-160">
+                        </div>
+                        
+                        <!-- Badge Status Active -->
+                        <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md py-1.5 px-3.5 sm:py-2 sm:px-4 rounded-2xl shadow-xl border border-pink-200 dark:border-slate-700 flex items-center space-x-2 z-20">
+                            <span class="relative flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                            </span>
+                            <span class="text-xs font-bold text-slate-800 dark:text-slate-100"><i class="fas fa-check-circle text-emerald-500 mr-1"></i>PPG Active</span>
+                        </div>
+                    </div>
+
+                    <!-- TEKS SAMBUTAN & BUTTONS NAVIGASI -->
+                    <div class="text-center lg:text-left flex-grow">
+                        <!-- Badge Tag Title -->
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-50 dark:bg-pink-950/60 text-pink-600 dark:text-pink-300 rounded-2xl text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 border border-pink-200/80 dark:border-pink-800/50">
+                            <i class="fas fa-graduation-cap text-pink-500"></i> Portofolio Digital PPG Prajabatan
+                        </div>
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 text-slate-800 dark:text-white leading-[1.2]">
+                            Selamat Datang di Portofolio <br class="hidden sm:inline"><span class="text-pink-500">Pendidikan Profesi Guru</span>
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-2xl text-justify lg:text-left">
+                            Ruang dokumentasi perjalanan akademis, refleksi pembelajaran, artefak perkuliahan, serta karya inovasi pendidikan bidang Pendidikan Teknik Informatika Universitas Negeri Malang.
+                        </p>
+
+                        <!-- Tombol Navigasi Utama -->
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                            <a href="profil.html" class="px-8 py-3.5 bg-pink-500 hover:bg-pink-600 text-white rounded-2xl font-bold shadow-lg shadow-pink-200 dark:shadow-none hover:-translate-y-0.5 transition-all flex items-center gap-2.5">
+                                <i class="fas fa-user-circle text-lg"></i> Lihat Profil Lengkap
+                            </a>
+                            <a href="artefak.html" class="px-8 py-3.5 bg-white dark:bg-slate-800 text-pink-600 dark:text-pink-300 border-2 border-pink-200 dark:border-slate-700 rounded-2xl font-bold hover:bg-pink-50 dark:hover:bg-slate-700 transition-all flex items-center gap-2.5 shadow-sm">
+                                <i class="fas fa-folder-open text-lg"></i> Jelajahi Artefak
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CARDS HIGHLIGHT STATS DILENGKAPI DI DALAM MAIN CARD -->
+                <div class="mt-10 pt-8 border-t border-pink-100 dark:border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 text-center">
+                    
+                    <div class="p-4 bg-pink-50/50 dark:bg-slate-800/50 rounded-2xl border border-pink-200/50 dark:border-slate-700/50 hover:bg-pink-100/50 transition-all group">
+                        <div class="w-10 h-10 bg-white dark:bg-slate-700 text-pink-500 rounded-xl flex items-center justify-center mx-auto mb-2.5 text-lg font-bold shadow-sm group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4 class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mb-0.5 uppercase tracking-wider">Instansi</h4>
+                        <p class="text-sm sm:text-base font-extrabold text-slate-800 dark:text-white">UM Malang</p>
+                    </div>
+
+                    <div class="p-4 bg-pink-50/50 dark:bg-slate-800/50 rounded-2xl border border-pink-200/50 dark:border-slate-700/50 hover:bg-pink-100/50 transition-all group">
+                        <div class="w-10 h-10 bg-white dark:bg-slate-700 text-pink-500 rounded-xl flex items-center justify-center mx-auto mb-2.5 text-lg font-bold shadow-sm group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mb-0.5 uppercase tracking-wider">Bidang</h4>
+                        <p class="text-sm sm:text-base font-extrabold text-slate-800 dark:text-white">Teknik Informatika</p>
+                    </div>
+
+                    <div class="p-4 bg-pink-50/50 dark:bg-slate-800/50 rounded-2xl border border-pink-200/50 dark:border-slate-700/50 hover:bg-pink-100/50 transition-all group">
+                        <div class="w-10 h-10 bg-white dark:bg-slate-700 text-pink-500 rounded-xl flex items-center justify-center mx-auto mb-2.5 text-lg font-bold shadow-sm group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mb-0.5 uppercase tracking-wider">Pengalaman</h4>
+                        <p class="text-sm sm:text-base font-extrabold text-slate-800 dark:text-white">PPL Praktik Kelas</p>
+                    </div>
+
+                    <div class="p-4 bg-pink-50/50 dark:bg-slate-800/50 rounded-2xl border border-pink-200/50 dark:border-slate-700/50 hover:bg-pink-100/50 transition-all group">
+                        <div class="w-10 h-10 bg-white dark:bg-slate-700 text-pink-500 rounded-xl flex items-center justify-center mx-auto mb-2.5 text-lg font-bold shadow-sm group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mb-0.5 uppercase tracking-wider">Karya</h4>
+                        <p class="text-sm sm:text-base font-extrabold text-slate-800 dark:text-white">Artefak Inovasi</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-placeholder" class="relative z-10"></div>
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 pointer-events-none z-50"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

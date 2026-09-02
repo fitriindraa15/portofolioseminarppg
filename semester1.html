@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artefak | Semester 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#f472b6', darkbg: '#181116' } } } }
+    </script>
+</head>
+<body class="bg-pink-50/40 text-slate-800 dark:bg-darkbg dark:text-slate-200">
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8 flex items-center justify-between">
+                <h2 class="text-3xl font-bold text-pink-700">Mata Kuliah Semester 1</h2>
+                <a href="artefak.html" class="text-sm font-semibold text-pink-500 hover:underline">
+                    <i class="fas fa-arrow-left mr-1"></i> Kembali ke Artefak
+                </a>
+            </div>
+
+            <!-- 6 Card Mata Kuliah Semester 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Filosofi Pendidikan -->
+                <a href="filosofi-pendidikan.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-book-open text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Filosofi Pendidikan dan Pendidikan Nilai</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Refleksi kritis pemikiran Ki Hajar Dewantara dan konsep pendidikan nilai dalam pembelajaran.</p>
+                </a>
+
+                <!-- 2. Pembelajaran Mendalam & Asesmen Dasar -->
+                <a href="pembelajaran-mendalam.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-tasks text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Pembelajaran Mendalam & Asesmen Dasar</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Penyusunan modul ajar dan perancangan asesmen autentik berorientasi peserta didik.</p>
+                </a>
+                
+                <!-- 3. Pemahaman Peserta Didik -->
+                <a href="pemahaman-peserta-didik.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-user-graduate text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Pemahaman Peserta Didik & Pembelajaran</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Studi kasus karakteristik peserta didik, teori perkembangan, dan diferensiasi pembelajaran.</p>
+                </a>
+                
+                <!-- 4. Computational Thinking -->
+                <a href="computational-thinking.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Computational Thinking</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Penerapan kerangka pemecahan masalah algoritmis dan dekomposisi dalam materi pembelajaran.</p>
+                </a>
+                
+                <!-- 5. Growth Mindset -->
+                <a href="growth-mindset.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-brain text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">Pola Pikir Bertumbuh (Growth Mindset)</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Internalisasi pola pikir bertumbuh untuk membangun motivasi dan resilience peserta didik.</p>
+                </a>
+                
+                <!-- 6. PPL Terbimbing -->
+                <a href="ppl-terbimbing.html" class="glass p-6 rounded-2xl border border-pink-200 card-hover block transition-all duration-300 hover:border-pink-400 hover:shadow-lg group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-chalkboard-teacher text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-semibold text-pink-500 bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 rounded-full">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">PPL Terbimbing</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Laporan praktik pengalaman lapangan terbimbing bersama guru pamong di sekolah mitra.</p>
+                </a>
+                
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
