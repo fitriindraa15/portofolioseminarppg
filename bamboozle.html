@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LK 4 | BAMBOOZLE TGT POWERPLAY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f472b6',
+                        secondary: '#fb7185',
+                        darkbg: '#181116'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(244, 114, 182, 0.25);
+        }
+        .dark .glass-card {
+            background: rgba(24, 17, 22, 0.85);
+            border: 1px solid rgba(244, 114, 182, 0.18);
+        }
+        .bg-custom-pattern {
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(244, 114, 182, 0.15) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(251, 113, 133, 0.12) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(216, 180, 254, 0.1) 0px, transparent 50%);
+        }
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-pink-50/40 text-slate-800 dark:bg-darkbg dark:text-slate-200 transition-colors duration-300 bg-custom-pattern min-h-screen">
+    
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder" class="relative z-50"></div>
+
+    <main class="pt-28 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <!-- TOMBOL BACK KE INOVASI.HTML -->
+            <div data-aos="fade-up">
+                <a href="inovasi.html" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white/90 dark:bg-slate-800/90 hover:bg-pink-500 hover:text-white text-pink-600 dark:text-pink-300 rounded-2xl border border-pink-200 dark:border-slate-700 font-bold text-xs sm:text-sm shadow-md transition-all duration-300 hover:scale-105">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Karya Inovasi
+                </a>
+            </div>
+
+            <!-- HERO COVER IDENTITAS LK 4 -->
+            <section class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden" data-aos="fade-up">
+                <div class="absolute -right-10 -bottom-10 w-72 h-72 bg-pink-300/30 dark:bg-pink-900/20 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="space-y-4 relative z-10">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-100 dark:bg-pink-950/70 text-pink-700 dark:text-pink-300 text-xs font-bold uppercase tracking-wider border border-pink-200 dark:border-pink-800">
+                        <i class="fas fa-gamepad text-pink-500"></i> LEMBAR KERJA 4 (LK 4) PENYUSUNAN DESAIN KARYA INOVATIF
+                    </div>
+                    
+                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500">BAMBOOZLE TGT POWERPLAY :</span> Kuis Tim untuk Mendukung Keterlibatan Murid dalam Pembelajaran Informatika
+                    </h1>
+                    
+                    <p class="text-sm sm:text-base font-semibold text-pink-600 dark:text-pink-300">
+                        Kuis Tim Berbasis Pembelajaran Kooperatif Teams Games Tournament (TGT)
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-pink-200/60 dark:border-slate-800">
+                        <div class="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-2xl border border-pink-100 dark:border-slate-700 shadow-sm">
+                            <div class="w-10 h-10 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md shadow-pink-500/20">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block">Penyusun</span>
+                                <span class="text-sm font-bold text-slate-800 dark:text-white">Fitri Indra Kusumaningtyas</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-2xl border border-pink-100 dark:border-slate-700 shadow-sm">
+                            <div class="w-10 h-10 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md shadow-pink-500/20">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block">Sasaran Inovasi</span>
+                                <span class="text-sm font-bold text-slate-800 dark:text-white">Peserta Didik SMP Negeri 15 Malang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DOKUMENTASI CAROUSEL -->
+            <section class="glass-card rounded-3xl p-6 shadow-md" data-aos="fade-up">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fas fa-camera text-pink-500"></i> Dokumentasi Kegiatan Baamboozle
+                    </h3>
+                    <span class="text-xs text-pink-600 dark:text-pink-300 font-semibold bg-pink-100 dark:bg-pink-950/60 px-3 py-1 rounded-full">
+                        Geser foto <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <div class="carousel-container flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 rounded-2xl">
+                    <div class="snap-center shrink-0 w-full sm:w-1/3 relative rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 h-56 group shadow-sm">
+                        <img src="https://lh3.googleusercontent.com/d/1OEYinQpqeitlmIwZs2_LpXITZeY7bwJd" alt="Dokumentasi Baamboozle 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3">
+                            <p class="text-xs text-white font-semibold"><i class="fas fa-desktop text-pink-400 mr-1"></i> Tampilan Kuis Baamboozle di Layar</p>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-full sm:w-1/3 relative rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 h-56 group shadow-sm">
+                        <img src="https://lh3.googleusercontent.com/d/1ww8N7qNVO5tJnFFqj1qIGNJ5ywRiGuFK" alt="Dokumentasi Baamboozle 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3">
+                            <p class="text-xs text-white font-semibold"><i class="fas fa-users text-pink-400 mr-1"></i> Diskusi Kelompok Tim Peserta Didik</p>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-full sm:w-1/3 relative rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 h-56 group shadow-sm">
+                        <img src="https://lh3.googleusercontent.com/d/1nTHHtb-bJcVxEuVDwFy3ju9tZL5QxLv-" alt="Dokumentasi Baamboozle 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3">
+                            <p class="text-xs text-white font-semibold"><i class="fas fa-trophy text-pink-400 mr-1"></i> Pelaksanaan Turnamen Kuis TGT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIKATOR 1: IDENTIFIKASI KEBUTUHAN DAN TANTANGAN -->
+            <section class="space-y-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="w-9 h-9 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md">
+                        1
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-pink-500 uppercase tracking-widest block">Indikator 1</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Identifikasi Kebutuhan dan Tantangan</h3>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border-l-4 border-l-pink-500 shadow-sm space-y-2">
+                    <span class="text-xs font-bold text-pink-700 dark:text-pink-300 flex items-center gap-1.5 uppercase">
+                        <i class="fas fa-search-minus"></i> Hasil Pengamatan & Kebutuhan Pembelajaran
+                    </span>
+                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                        Pengamatan di SMP Negeri 15 Malang menunjukkan keterlibatan murid dalam Informatika belum merata. Sebagian murid aktif, sementara sebagian lain kurang terlibat dan ada yang merasa dianggap beban dalam kelompok. Kondisi ini mendorong kebutuhan akan kegiatan pembelajaran yang menarik, memiliki aturan partisipasi jelas, serta memberikan giliran menjawab dan berdiskusi. Sebagai solusi, dipilihlah media Baamboozle yang dipadukan dengan model Teams Games Tournament (TGT) agar setiap murid mendapat kesempatan berpartisipasi dan bekerja sama secara adil.
+                    </p>
+                </div>
+            </section>
+
+            <!-- INDIKATOR 2: PERUMUSAN GAGASAN DAN TUJUAN INOVASI -->
+            <section class="space-y-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="w-9 h-9 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md">
+                        2
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-pink-500 uppercase tracking-widest block">Indikator 2</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Perumusan Gagasan dan Tujuan Inovasi</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="glass-card p-5 rounded-2xl border-t-4 border-t-pink-500 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-pink-600 dark:text-pink-400 block uppercase">
+                            <i class="fas fa-lightbulb mr-1"></i> Gagasan Solusi
+                        </span>
+                        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                            Mengembangkan <strong>BAMBOOZLE TGT POWERPLAY</strong>, yaitu kuis tim Baamboozle berbasis TGT. Media Baamboozle menyediakan permainan interaktif, sedangkan TGT mengatur alur penyajian materi, belajar kelompok, turnamen, dan penghargaan tim dengan mekanisme giliran menjawab agar keterlibatan murid lebih merata.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-t-4 border-t-purple-500 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-purple-600 dark:text-purple-400 block uppercase">
+                            <i class="fas fa-bullseye mr-1"></i> Rumusan Tujuan
+                        </span>
+                        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                            Menyediakan kegiatan pembelajaran Informatika yang terstruktur untuk mendorong keterlibatan murid, memfasilitasi kerja sama dan diskusi, menciptakan suasana belajar yang menyenangkan, serta membantu guru mengulas materi dan mengidentifikasi miskonsepsi konsep.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-t-4 border-t-indigo-500 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 block uppercase">
+                            <i class="fas fa-star mr-1"></i> Karakteristik & Keunggulan
+                        </span>
+                        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                            Karya ini memadukan permainan digital dengan sintaks TGT (tim heterogen, poin kelompok, dan diskusi). Sangat relevan untuk melatih partisipasi murid, bermanfaat bagi guru untuk mengulas materi, serta efektif dalam membangun suasana belajar kooperatif.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIKATOR 3: RISET DAN PENGEMBANGAN SOLUSI -->
+            <section class="space-y-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="w-9 h-9 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md">
+                        3
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-pink-500 uppercase tracking-widest block">Indikator 3</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Riset dan Pengembangan Solusi</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-pink-500 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-pink-600 dark:text-pink-400 block uppercase">
+                            <i class="fas fa-book-open mr-1"></i> Landasan Riset
+                        </span>
+                        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                            Kajian literatur (Andriyani et al., 2024; Safitri et al., 2025; Sholehardani et al., 2026; Pratiwi et al., 2026) menunjukkan Baamboozle berpotensi meningkatkan motivasi dan keaktifan. BAMBOOZLE TGT POWERPLAY mengisi celah dengan menerapkan aturan TGT pada kelas Informatika SMP agar partisipasi murid tidak terpusat pada individu tertentu saja.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-purple-500 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-purple-600 dark:text-purple-400 block uppercase">
+                            <i class="fas fa-sitemap mr-1"></i> Desain Prototipe
+                        </span>
+                        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                            Prototipe terdiri dari: (1) Bank soal Baamboozle variatif; (2) Tim heterogen 4–5 murid; (3) Aturan giliran menjawab; (4) Sistem poin kelompok; (5) Pembahasan jawaban bersama guru; serta (6) Lembar refleksi dan observasi keaktifan.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIKATOR 4: IMPLEMENTASI DAN PENERAPAN -->
+            <section class="space-y-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="w-9 h-9 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md">
+                        4
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-pink-500 uppercase tracking-widest block">Indikator 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Implementasi dan Penerapan</h3>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border-t-4 border-t-emerald-500 shadow-sm space-y-2">
+                    <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 block uppercase">
+                        <i class="fas fa-play-circle mr-1"></i> Proses & Tahapan Implementasi
+                    </span>
+                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                        Implementasi telah dilaksanakan melalui 6 tahapan utama TGT: (1) Persiapan media dan tim; (2) Penyajian materi singkat oleh guru; (3) Belajar kelompok; (4) Pelaksanaan kuis turnamen Baamboozle bergiliran; (5) Pembahasan dan penguatan konsep oleh guru; serta (6) Pemberian penghargaan tim dan refleksi murid.
+                    </p>
+                </div>
+            </section>
+
+            <!-- INDIKATOR 5: EVALUASI -->
+            <section class="space-y-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="w-9 h-9 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-base shadow-md">
+                        5
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-pink-500 uppercase tracking-widest block">Indikator 5</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Evaluasi</h3>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border-l-4 border-l-rose-500 shadow-sm space-y-2">
+                    <span class="text-xs font-bold text-rose-600 dark:text-rose-400 block uppercase">
+                        <i class="fas fa-chart-line mr-1"></i> Tahapan Evaluasi
+                    </span>
+                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                        Keberhasilan dievaluasi melalui pengamatan lembar observasi keaktifan, analisis jawaban kuis per soal untuk mendeteksi miskonsepsi, serta analisis lembar refleksi murid. Hasil ini digunakan sebagai umpan balik untuk memperbaiki aturan permainan dan susunan soal di pertemuan berikutnya.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EMBED DOKUMEN GOOGLE DOCS (LK 4 BAAMBOOZLE LINK TERBARU) -->
+            <section class="glass-card rounded-3xl p-6 sm:p-8 space-y-4 shadow-md" data-aos="fade-up">
+                <div class="flex items-center justify-between border-b border-pink-200/60 pb-3 flex-wrap gap-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-pink-500 text-white rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg lg:text-xl font-bold text-slate-900 dark:text-white">Dokumen Asli LK 4 — Baamboozle</h3>
+                            <p class="text-xs text-pink-600 dark:text-pink-400">Pratinjau berkas penyusunan desain karya inovatif lengkap di Google Docs</p>
+                        </div>
+                    </div>
+
+                    <a href="https://docs.google.com/document/d/1M5UDdW0em4ZMWpXX2qgIlR7GHorU0tNq/edit?rtpof=true" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white text-xs font-semibold rounded-xl transition duration-300 flex items-center gap-1.5 shadow-md shadow-pink-500/20">
+                        <i class="fas fa-external-link-alt"></i> Buka Google Docs
+                    </a>
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-2xl border border-pink-200 dark:border-slate-700 shadow-inner bg-white" style="height: 600px;">
+                    <iframe src="https://docs.google.com/document/d/1M5UDdW0em4ZMWpXX2qgIlR7GHorU0tNq/preview" class="w-full h-full border-0" allow="autoplay"></iframe>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder" class="relative z-10"></div>
+    
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 pointer-events-none z-50 hover:bg-pink-600 transition-colors">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

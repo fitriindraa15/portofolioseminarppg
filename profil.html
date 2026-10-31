@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital PPG | Profil - LK 1 Identifikasi Diri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { primary: '#f472b6', secondary: '#fb7185', darkbg: '#181116' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-custom-pattern {
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(244, 114, 182, 0.15) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(251, 113, 133, 0.12) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(216, 180, 254, 0.1) 0px, transparent 50%);
+        }
+        .dark .bg-custom-pattern {
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(244, 114, 182, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(159, 18, 57, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(88, 28, 135, 0.15) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-pink-50/30 text-slate-800 dark:bg-darkbg dark:text-slate-200 transition-colors duration-300 bg-custom-pattern relative overflow-x-hidden">
+    
+    <!-- LOADER -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center pointer-events-none">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <!-- NAVBAR PLACEHOLDER -->
+    <div id="navbar-placeholder" class="relative z-50"></div>
+
+    <main class="pt-28 pb-20 relative">
+
+        <div class="absolute top-32 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-r from-pink-300/20 to-rose-300/20 dark:from-pink-900/10 dark:to-rose-900/10 blur-3xl rounded-full pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            
+            <!-- SECTION 1: IDENTITAS DIRI & DESKRIPSI UTAMA -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="glass rounded-3xl p-8 lg:p-12 shadow-xl border border-pink-200/80 dark:border-slate-800/80 backdrop-blur-md flex flex-col lg:flex-row gap-10 lg:gap-14 items-center relative overflow-hidden">
+                    
+                    <!-- Frame Foto Profil -->
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 flex-shrink-0 group">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                        <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-white dark:bg-slate-900 flex items-center justify-center">
+                            <img src="https://lh3.googleusercontent.com/d/1V6caO2m4O6Ohc57_SvnJhRXLGCArk64B" alt="Fitri Indra Kusumaningtyas" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                    
+                    <!-- Deskripsi Profil -->
+                    <div class="flex-grow text-center lg:text-left">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-100 dark:bg-pink-950/70 text-primary font-bold text-xs rounded-full uppercase tracking-widest border border-pink-300/50 dark:border-pink-800/50 mb-3">
+                            <i class="fas fa-id-card text-pink-500"></i> Lembar Kerja 1 (LK 1) Identifikasi Diri
+                        </span>
+                        
+                        <h1 class="text-3xl lg:text-4xl font-extrabold mb-2 text-slate-800 dark:text-white leading-tight">
+                            Fitri Indra Kusumaningtyas
+                        </h1>
+                        <p class="text-lg lg:text-xl text-primary font-bold mb-6">
+                            253153744068 • Pendidikan Teknik Informatika
+                        </p>
+
+                        <div class="space-y-4 text-slate-600 dark:text-slate-300 text-base leading-relaxed text-justify lg:text-left">
+                            <p>
+                                Saya merupakan mahasiswa Program Pendidikan Profesi Guru (PPG) di Universitas Negeri Malang pada bidang studi Pendidikan Teknik Informatika. Melalui program PPG, saya belajar untuk mempersiapkan diri menjadi guru yang profesional dan mampu menciptakan pembelajaran yang sesuai dengan kebutuhan murid.
+                            </p>
+                            <p>
+                                Melalui Lembar Kerja 1 (LK 1) Identifikasi Diri ini, saya merumuskan pandangan dan visi tentang pendidikan yang ingin diwujudkan, upaya untuk menjadi guru profesional, serta rencana tindak lanjut yang akan saya lakukan untuk mewujudkan visi tersebut.
+                            </p>
+                        </div>
+
+                        <!-- Badges Identitas -->
+                        <div class="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start border-t border-pink-100 dark:border-slate-800/80 pt-6">
+                            <span class="px-4 py-2 bg-white/70 dark:bg-slate-800/80 rounded-xl text-xs font-semibold text-slate-700 dark:text-pink-300 border border-pink-200/60 dark:border-slate-700 shadow-sm">
+                                <i class="fas fa-university text-pink-400 mr-2"></i>Universitas Negeri Malang
+                            </span>
+                            <span class="px-4 py-2 bg-white/70 dark:bg-slate-800/80 rounded-xl text-xs font-semibold text-slate-700 dark:text-pink-300 border border-pink-200/60 dark:border-slate-700 shadow-sm">
+                                <i class="fas fa-map-marker-alt text-pink-400 mr-2"></i>Bojonegoro, Jawa Timur
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: DAERAH ASAL & KEUNIKAN -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="glass rounded-3xl p-8 lg:p-12 shadow-md border border-pink-200/80 dark:border-slate-800/80 flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="flex-grow">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-100 dark:bg-slate-800 text-pink-700 dark:text-pink-300 rounded-full text-xs font-semibold tracking-wide uppercase border border-pink-200 dark:border-slate-700 mb-3">
+                            <i class="fas fa-landmark text-pink-500"></i> Asal Daerah & Budaya
+                        </span>
+                        <h2 class="text-3xl lg:text-4xl font-extrabold mb-2 text-slate-800 dark:text-white leading-tight">Bojonegoro</h2>
+                        <p class="text-lg text-primary font-bold mb-6">Kota Api Abadi & Warisan Sejarah</p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4 text-justify">
+                            Saya berasal dari Bojonegoro, salah satu daerah di Jawa Timur yang memiliki keunikan alam dan nilai sejarah yang khas. Salah satu ikon yang terkenal adalah Kayangan Api, yaitu fenomena alam berupa api abadi yang muncul dari dalam tanah dan tidak pernah padam. Keunikan ini tidak hanya menarik secara ilmiah, tetapi juga sarat dengan nilai sejarah dan budaya.
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                            Sejak zaman Kerajaan Majapahit, Kayangan Api dipercaya memiliki keterkaitan dengan aktivitas Empu Supo dalam menempa senjata pusaka. Hal tersebut menjadikan tempat ini bukan sekadar fenomena alam, tetapi juga bagian dari warisan kearifan lokal yang terus dijaga hingga saat ini. Di tengah suasana hutan jati yang tenang, api yang terus menyala seakan menjadi simbol bahwa sejarah dan budaya akan selalu hidup dan tidak lekang oleh waktu.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-96 flex-shrink-0">
+                        <h3 class="text-base font-bold text-center mb-3 text-slate-700 dark:text-slate-200"><i class="fab fa-youtube text-red-500 mr-2"></i>Dokumentasi Kayangan Api</h3>
+                        <div class="relative w-full overflow-hidden rounded-2xl shadow-xl border border-pink-200 dark:border-slate-700" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/ReAkSbtZuuQ" title="Kayangan Api Bojonegoro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: VISI PENDIDIKAN DI INDONESIA & VISI PRIBADI CALON GURU -->
+            <section class="mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-100 dark:bg-pink-950/60 text-primary font-bold text-xs rounded-full uppercase tracking-widest border border-pink-300 dark:border-pink-800 inline-block mb-3">
+                        <i class="fas fa-compass text-pink-500"></i> Visi Pendidikan 
+                    </span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-800 dark:text-white leading-tight">Visi & Rencana Tindak Lanjut</h2>
+                    <p class="mt-3 text-slate-600 dark:text-slate-400">Rangkuman hasil Lembar Kerja 1 (LK 1) Identifikasi Diri tentang pandangan terhadap pendidikan, upaya menjadi guru profesional, dan langkah nyata untuk mewujudkan visi sebagai pendidik.</p>
+                </div>
+
+                <div class="space-y-12">
+                    
+                    <!-- KARTU 1: VISI PRIBADI UNTUK PENDIDIKAN DI INDONESIA (50:50 LAYOUT) -->
+                    <div class="glass rounded-3xl p-8 lg:p-10 border border-pink-200/80 dark:border-slate-800/80 shadow-md relative overflow-hidden group hover:border-pink-400 transition duration-300" data-aos="fade-up">
+                        <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                            
+                            <!-- KIRI: Konten Teks Visi Pendidikan Indonesia (50%) -->
+                            <div class="w-full lg:w-1/2 flex flex-col justify-between space-y-4">
+                                <div>
+                                    <div class="flex items-center justify-between pb-4 border-b border-pink-100 dark:border-slate-800">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center text-white text-xl shadow-lg shadow-pink-500/30 flex-shrink-0">
+                                                <i class="fas fa-globe-asia"></i>
+                                            </div>
+                                            <div>
+                                                <span class="text-xs font-extrabold text-pink-500 uppercase tracking-widest">Indikator 1</span>
+                                                <h3 class="text-xl lg:text-2xl font-bold text-slate-800 dark:text-white">Visi Pribadi untuk Pendidikan di Indonesia</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-pink-50/80 dark:bg-slate-900/60 p-4 rounded-2xl border-l-4 border-pink-500 my-4">
+                                        <p class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1"><i class="fas fa-question-circle mr-1 text-pink-400"></i> Apa visi saya untuk pendidikan di Indonesia?</p>
+                                        <h4 class="text-base lg:text-lg font-extrabold text-pink-600 dark:text-pink-300 italic">
+                                            “Terwujudnya pendidikan Indonesia yang tidak hanya mencerdaskan, tetapi juga membentuk generasi yang berkarakter dan siap menghadapi masa depan.”
+                                        </h4>
+                                    </div>
+
+                                    <div class="space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-sm sm:text-base">
+                                        <p>
+                                            Saya ingin pendidikan di Indonesia tidak hanya berfokus pada pencapaian akademik, tetapi juga membentuk karakter murid, seperti kejujuran, tanggung jawab, disiplin, dan sikap saling menghargai.
+                                        </p>
+                                        <p>
+                                            Menurut saya, keberhasilan pendidikan tidak cukup dilihat dari nilai yang diperoleh, tetapi juga dari bagaimana seseorang bersikap, mengambil keputusan, dan menerapkan pengetahuannya dalam kehidupan sehari-hari.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 bg-white/80 dark:bg-slate-800/80 rounded-2xl border border-pink-200 dark:border-slate-700 shadow-sm text-center">
+                                    <p class="text-sm font-bold text-slate-800 dark:text-white italic">
+                                        “Pendidikan membekali generasi dengan ilmu untuk melangkah dan karakter untuk menentukan arah.”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- KANAN: Gambar Pendukung Visi Pendidikan Indonesia (50% Sama Besar) -->
+                            <div class="w-full lg:w-1/2 flex flex-col">
+                                <div class="relative w-full h-full min-h-[300px] rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 shadow-lg group/img flex items-center justify-center">
+                                    <img src="https://lh3.googleusercontent.com/d/1Sz9XpWPPtFtmBPLMabYOu3jZ7b9RJMBk" alt="Visi Pendidikan Indonesia" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-500">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- KARTU 2: VISI PRIBADI SEBAGAI CALON GURU (50:50 LAYOUT) -->
+                    <div class="glass rounded-3xl p-8 lg:p-10 border border-pink-200/80 dark:border-slate-800/80 shadow-md relative overflow-hidden group hover:border-pink-400 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                            
+                            <!-- KIRI: Konten Teks Visi Calon Guru (50%) -->
+                            <div class="w-full lg:w-1/2 flex flex-col justify-between space-y-4">
+                                <div>
+                                    <div class="flex items-center justify-between pb-4 border-b border-pink-100 dark:border-slate-800">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-2xl flex items-center justify-center text-white text-xl shadow-lg shadow-rose-500/30 flex-shrink-0">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <div>
+                                                <span class="text-xs font-extrabold text-pink-500 uppercase tracking-widest">Indikator 2</span>
+                                                <h3 class="text-xl lg:text-2xl font-bold text-slate-800 dark:text-white">Visi Pribadi sebagai Calon Guru</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-pink-50/80 dark:bg-slate-900/60 p-4 rounded-2xl border-l-4 border-rose-500 my-4">
+                                        <p class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1"><i class="fas fa-question-circle mr-1 text-pink-400"></i> Apa visi saya sebagai calon guru?</p>
+                                        <h4 class="text-base lg:text-lg font-extrabold text-rose-600 dark:text-pink-300 italic">
+                                            “Menjadi guru yang adaptif, reflektif, dan mampu menciptakan pembelajaran yang nyaman serta bermakna bagi murid.”
+                                        </h4>
+                                    </div>
+
+                                    <div class="space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed text-justify text-sm sm:text-base">
+                                        <p>
+                                            Sebagai calon guru, saya ingin menjadi pendidik yang mampu menyesuaikan pembelajaran dengan kebutuhan murid dan perkembangan zaman. Saya ingin membangun hubungan yang positif dengan murid agar tercipta suasana belajar yang terbuka, nyaman, dan saling menghargai.
+                                        </p>
+                                        <p>
+                                            Saya juga ingin memanfaatkan teknologi serta memilih metode pembelajaran yang sesuai agar materi lebih mudah dipahami dan menarik untuk dipelajari.
+                                        </p>
+                                        <p>
+                                            Selain itu, saya berusaha menjadi teladan dalam hal kedisiplinan dan tanggung jawab, serta terus mengevaluasi diri untuk memperbaiki kualitas pembelajaran dan mengembangkan kemampuan sebagai seorang pendidik.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KANAN: Gambar Pendukung Visi Calon Guru (50% Sama Besar) -->
+                            <div class="w-full lg:w-1/2 flex flex-col">
+                                <div class="relative w-full h-full min-h-[300px] rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 shadow-lg group/img flex items-center justify-center">
+                                    <img src="https://lh3.googleusercontent.com/d/16hlYvEHrqecQcKHQ6OkkyEXceezaU19B" alt="Visi Pribadi Calon Guru" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-500">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 4: HAL YANG DILAKUK UNTUK MENCAPAI VISI (50:50 LAYOUT) -->
+            <section class="mb-20" data-aos="fade-up">
+                <div class="glass p-8 lg:p-12 rounded-3xl border border-pink-200/80 dark:border-slate-800/80 shadow-md relative overflow-hidden">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-100 dark:bg-pink-950/60 text-primary font-bold text-xs rounded-full uppercase tracking-widest border border-pink-300 dark:border-pink-800 inline-block mb-3">
+                            <i class="fas fa-tasks text-pink-500"></i> Indikator 3
+                        </span>
+                        <h3 class="text-2xl lg:text-3xl font-extrabold text-slate-800 dark:text-white leading-tight">
+                            Hal yang Dilakukan untuk Mencapai Visi
+                        </h3>
+                        <p class="text-sm font-semibold text-pink-600 dark:text-pink-400 mt-2">
+                            <i class="fas fa-question-circle mr-1"></i> Apa yang akan saya lakukan untuk mencapai visi tersebut?
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                        
+                        <!-- KIRI: Uraian Langkah Strategis (50%) -->
+                        <div class="w-full lg:w-1/2 space-y-4">
+                            
+                            <!-- Paragraf 1 -->
+                            <div class="flex gap-4 p-5 bg-white/80 dark:bg-slate-800/80 rounded-2xl border border-pink-100 dark:border-slate-700 shadow-sm">
+                                <div class="w-8 h-8 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-md shadow-pink-500/20">
+                                    1
+                                </div>
+                                <div class="space-y-1">
+                                    <h4 class="font-bold text-slate-800 dark:text-white text-sm sm:text-base">Pengembangan Diri & Pembelajaran Bermakna</h4>
+                                    <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">
+                                        Untuk mewujudkan visi tersebut, saya akan terus mengembangkan kemampuan diri dengan memperdalam pengetahuan, mengikuti pelatihan yang relevan, dan mempelajari perkembangan teknologi serta pendekatan pembelajaran yang sesuai dengan kebutuhan murid. Saya juga akan menjadikan pengalaman mengajar sebagai kesempatan untuk belajar dan memperbaiki diri, terutama dalam menghadapi perbedaan karakteristik, kemampuan, dan cara belajar murid. Dengan demikian, saya dapat menyesuaikan pembelajaran agar lebih mudah dipahami, menarik, dan bermakna bagi mereka.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Paragraf 2 -->
+                            <div class="flex gap-4 p-5 bg-white/80 dark:bg-slate-800/80 rounded-2xl border border-pink-100 dark:border-slate-700 shadow-sm">
+                                <div class="w-8 h-8 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-md shadow-pink-500/20">
+                                    2
+                                </div>
+                                <div class="space-y-1">
+                                    <h4 class="font-bold text-slate-800 dark:text-white text-sm sm:text-base">Evaluasi Berkala & Pembiasaan Nilai Karakter</h4>
+                                    <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">
+                                        Saya akan melakukan evaluasi secara berkala terhadap proses pembelajaran, baik dari metode yang digunakan, keterlibatan murid, maupun hasil belajar yang dicapai. Hasil evaluasi tersebut akan menjadi dasar untuk menentukan hal-hal yang perlu dipertahankan dan diperbaiki pada pembelajaran berikutnya. Selain berfokus pada pencapaian akademik, saya juga akan membiasakan nilai kejujuran, disiplin, tanggung jawab, kemandirian, dan sikap saling menghargai melalui kegiatan belajar sehari-hari.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Paragraf 3 -->
+                            <div class="flex gap-4 p-5 bg-white/80 dark:bg-slate-800/80 rounded-2xl border border-pink-100 dark:border-slate-700 shadow-sm">
+                                <div class="w-8 h-8 bg-pink-500 text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-md shadow-pink-500/20">
+                                    3
+                                </div>
+                                <div class="space-y-1">
+                                    <h4 class="font-bold text-slate-800 dark:text-white text-sm sm:text-base">Menciptakan Lingkungan Belajar yang Nyaman & Terbuka</h4>
+                                    <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">
+                                        Saya akan berusaha menciptakan suasana kelas yang nyaman agar murid berani bertanya, menyampaikan pendapat, dan belajar dari kesalahan. Melalui upaya tersebut, saya berharap dapat menjadi guru yang terus berkembang dan mampu mendampingi murid agar memiliki pengetahuan, karakter yang baik, serta kesiapan menghadapi tantangan di masa depan.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- KANAN: Gambar Pendukung Strategi (50% Sama Besar) -->
+                        <div class="w-full lg:w-1/2 flex flex-col">
+                            <div class="relative w-full h-full min-h-[320px] rounded-2xl overflow-hidden border-2 border-pink-200 dark:border-slate-700 shadow-lg group/img flex items-center justify-center">
+                                <img src="https://lh3.googleusercontent.com/d/1nTHHtb-bJcVxEuVDwFy3ju9tZL5QxLv-" alt="Strategi Pencapaian Visi" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-500">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 5: GALERI DEDIKASI DALAM MENGAJAR -->
+            <section class="mb-12" data-aos="fade-up">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-pink-100 dark:bg-pink-950/60 text-primary font-bold text-xs rounded-full uppercase tracking-widest border border-pink-300/60 dark:border-pink-800/50">
+                        <i class="fas fa-heart text-pink-500"></i> Panggilan Jiwa
+                    </span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-800 dark:text-white mt-3 leading-tight">
+                        Dedikasi dalam Mengajar
+                    </h2>
+                    <p class="mt-3 text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                        Momen-momen berharga dalam interaksi pembelajaran yang menumbuhkan semangat belajar dan ruang tumbuh bersama.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Foto Dedikasi 1 -->
+                    <div class="glass p-4 rounded-3xl border border-pink-200/80 dark:border-slate-800/80 shadow-md group hover:border-pink-400 transition-all duration-300 flex flex-col justify-between">
+                        <div class="overflow-hidden rounded-2xl mb-4 w-full aspect-video">
+                            <img src="https://lh3.googleusercontent.com/d/1-RwZmISTtpY5QDbS8gPeo3rzJQphcmfr" alt="Aktivitas Pendidik 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-3 bg-white/50 dark:bg-slate-900/40 rounded-xl border border-pink-100/50 dark:border-slate-800/50">
+                            <p class="text-xs text-slate-600 dark:text-slate-300 text-center font-medium leading-relaxed">
+                                <i class="fas fa-chalkboard-teacher text-pink-400 mr-1.5"></i>
+                                Membangun suasana kelas yang interaktif dan mendorong peserta didik berani mengemukakan gagasannya.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Foto Dedikasi 2 -->
+                    <div class="glass p-4 rounded-3xl border border-pink-200/80 dark:border-slate-800/80 shadow-md group hover:border-pink-400 transition-all duration-300 flex flex-col justify-between">
+                        <div class="overflow-hidden rounded-2xl mb-4 w-full aspect-video">
+                            <img src="https://lh3.googleusercontent.com/d/1UDu-zovsvBLKYEmr_W3rbE9PiJMcgyTt" alt="Aktivitas Pendidik 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-3 bg-white/50 dark:bg-slate-900/40 rounded-xl border border-pink-100/50 dark:border-slate-800/50">
+                            <p class="text-xs text-slate-600 dark:text-slate-300 text-center font-medium leading-relaxed">
+                                <i class="fas fa-smile-beam text-pink-400 mr-1.5"></i>
+                                Merawat senyuman dan antusiasme belajar sebagai pondasi utama terciptanya ekosistem kelas yang positif.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder" class="relative z-10"></div>
+    
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 pointer-events-none z-50 hover:bg-pink-600 transition-colors">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

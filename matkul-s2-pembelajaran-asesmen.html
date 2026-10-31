@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Mendalam dan Asesmen | Portofolio PPG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { 
+                extend: { 
+                    colors: { 
+                        primary: '#f472b6', 
+                        darkbg: '#181116' 
+                    } 
+                } 
+            }
+        }
+    </script>
+    <style>
+        .tab-btn.active {
+            background-color: #f472b6;
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(244, 114, 182, 0.39);
+        }
+    </style>
+</head>
+<body class="bg-pink-50/40 text-slate-800 dark:bg-darkbg dark:text-slate-200 min-h-screen">
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+    </div>
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Tombol Kembali -->
+            <div class="mb-6 flex items-center justify-between">
+                <a href="semester2.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-pink-200 dark:border-pink-900/50 text-sm font-semibold text-pink-600 dark:text-pink-400 hover:bg-pink-500 hover:text-white transition-all shadow-sm">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Semester 2
+                </a>
+            </div>
+
+            <!-- Header Banner -->
+            <div class="relative overflow-hidden glass p-8 sm:p-10 rounded-3xl border border-pink-200 dark:border-pink-900/40 mb-12 shadow-xl" data-aos="fade-up">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-pink-300/20 dark:bg-pink-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                    <div class="flex items-start sm:items-center gap-6">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-pink-400 to-pink-600 text-white rounded-2xl flex items-center justify-center text-3xl sm:text-4xl shadow-lg shadow-pink-500/30 flex-shrink-0">
+                            <i class="fas fa-chart-line font-bold"></i>
+                        </div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-pink-100 dark:bg-pink-950/60 text-pink-600 dark:text-pink-300 text-xs font-bold rounded-full mb-2 uppercase tracking-wider">Mata kuliah</span>
+                            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-2">Pembelajaran Mendalam dan Asesmen</h1>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
+                                Refleksi pengalaman belajar calon guru Informatika berbasis kerangka 4C, penerapan asesmen awal kognitif dan non-kognitif, serta pemetaan kebutuhan belajar murid selama Praktik Pengalaman Lapangan (PPL).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEKSI 1: LAYOUT BERDAMPINGAN (REFLEKSI 4C + EMBED DOKUMEN LK 2) -->
+            <section class="mb-16" data-aos="fade-up" data-aos-delay="100">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                        <span class="w-2.5 h-7 bg-pink-500 rounded-full inline-block"></span>
+                        Refleksi Pengalaman Belajar & Dokumen LK 2
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Refleksi pengalaman belajar menggunakan kerangka 4C (Connection, Challenge, Concept, Change)</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Kolom Kiri (Lg: 7): Tab Interaktif Refleksi 4C -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <!-- Navigasi Tab -->
+                        <div class="flex flex-wrap gap-2 p-1.5 bg-white/60 dark:bg-slate-900/60 rounded-2xl border border-pink-100 dark:border-pink-950">
+                            <button onclick="switchTab('tab-connection')" id="btn-tab-connection" class="tab-btn active flex-1 sm:flex-none px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5">
+                                <i class="fas fa-link"></i> 1. Connection
+                            </button>
+                            <button onclick="switchTab('tab-challenge')" id="btn-tab-challenge" class="tab-btn flex-1 sm:flex-none px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-pink-100/50 dark:hover:bg-slate-800 transition-all flex items-center justify-center gap-1.5">
+                                <i class="fas fa-mountain"></i> 2. Challenge
+                            </button>
+                            <button onclick="switchTab('tab-concept')" id="btn-tab-concept" class="tab-btn flex-1 sm:flex-none px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-pink-100/50 dark:hover:bg-slate-800 transition-all flex items-center justify-center gap-1.5">
+                                <i class="fas fa-lightbulb"></i> 3. Concept
+                            </button>
+                            <button onclick="switchTab('tab-change')" id="btn-tab-change" class="tab-btn flex-1 sm:flex-none px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-pink-100/50 dark:hover:bg-slate-800 transition-all flex items-center justify-center gap-1.5">
+                                <i class="fas fa-sync-alt"></i> 4. Change
+                            </button>
+                        </div>
+
+                        <!-- Isi Konten Tab -->
+                        <div class="glass p-6 sm:p-8 rounded-3xl border border-pink-200 dark:border-pink-900/40 shadow-lg min-h-[320px]">
+                            
+                            <!-- Tab 1: Connection -->
+                            <div id="tab-connection" class="tab-content space-y-4">
+                                <div class="flex items-center gap-3 border-b border-pink-100 dark:border-pink-900/40 pb-3">
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/50 text-pink-600 dark:text-pink-300 text-xs font-extrabold rounded-lg uppercase">Connection</span>
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Keterkaitan Materi Perkuliahan dengan Peran Calon Guru</h3>
+                                </div>
+                                <div class="p-5 bg-pink-100/60 dark:bg-pink-950/40 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm">
+                                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                        Mata kuliah ini memperkuat pemahaman saya bahwa pembelajaran perlu dirancang berdasarkan kondisi nyata murid, bukan hanya berdasarkan materi dan tujuan yang harus dicapai. Melalui materi tentang asesmen awal, pembelajaran berdiferensiasi, dan Desain Universal untuk Pembelajaran (DUP/UDL), saya belajar bahwa guru perlu mengetahui kesiapan dan kebutuhan murid sebelum menentukan pembelajaran. Dari konsep tersebut, saya mencoba menerapkannya dalam PPL dengan melakukan asesmen awal sebelum pembelajaran untuk mendapatkan gambaran tentang kemampuan dan kebutuhan murid. Hasil asesmen awal tersebut kemudian saya gunakan sebagai bahan pertimbangan dalam merancang pembelajaran, di mana saya menemukan bahwa kemampuan dan kesiapan murid tidak selalu sama, sehingga asesmen awal menjadi langkah penting bagi guru untuk menentukan pembelajaran yang lebih sesuai dengan kondisi murid.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Tab 2: Challenge -->
+                            <div id="tab-challenge" class="tab-content hidden space-y-4">
+                                <div class="flex items-center gap-3 border-b border-pink-100 dark:border-pink-900/40 pb-3">
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/50 text-pink-600 dark:text-pink-300 text-xs font-extrabold rounded-lg uppercase">Challenge</span>
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Perbedaan Materi Perkuliahan dengan Praktik Selama Ini</h3>
+                                </div>
+                                <div class="p-5 bg-pink-100/60 dark:bg-pink-950/40 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm">
+                                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                        Tantangan bagi saya adalah mengubah kebiasaan dalam merancang pembelajaran yang sebelumnya lebih banyak disesuaikan berdasarkan rencana materi guru, menjadi pembelajaran yang mempertimbangkan kondisi murid sejak awal. Setelah saya melaksanakan asesmen awal di beberapa kelas, saya menemukan bahwa setiap kelas memiliki kondisi yang berbeda dan murid di dalamnya juga memiliki karakteristik yang beragam. Hasil tersebut membuat saya tidak bisa langsung menggunakan satu strategi pembelajaran yang sama untuk semua kelas, melainkan perlu mempertimbangkan hasil asesmen untuk menentukan strategi, bentuk pendampingan, dan aktivitas yang lebih sesuai dengan kondisi masing-masing kelas sambil tetap mencapai tujuan pembelajaran.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Tab 3: Concept -->
+                            <div id="tab-concept" class="tab-content hidden space-y-4">
+                                <div class="flex items-center gap-3 border-b border-pink-100 dark:border-pink-900/40 pb-4">
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/50 text-pink-600 dark:text-pink-300 text-xs font-extrabold rounded-lg uppercase">Concept</span>
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Konsep Utama & Penting yang Dipelajari</h3>
+                                </div>
+                                <div class="p-5 bg-pink-100/60 dark:bg-pink-950/40 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm">
+                                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                        Konsep yang paling bermakna bagi saya adalah pemahaman fungsi asesmen diagnostik, formatif, dan sumatif yang digunakan sesuai kebutuhan belajar, serta integrasi konsep DUP untuk melihat kesiapan, minat, gaya belajar, dan hambatan murid. Pemahaman ini menjadi lebih nyata ketika saya melakukan asesmen awal di beberapa kelas dan menemukan kesulitan konsisten pada pemahaman fungsi AVERAGE dan MAX di materi spreadsheet. Pengalaman tersebut membuktikan bahwa data asesmen harus dibaca dan digunakan untuk menentukan tindakan guru selanjutnya, menjadikan asesmen sebagai bagian inti dari proses pembelajaran yang bermakna, bukan sekadar kegiatan untuk memberikan nilai.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Tab 4: Change -->
+                            <div id="tab-change" class="tab-content hidden space-y-4">
+                                <div class="flex items-center gap-3 border-b border-pink-100 dark:border-pink-900/40 pb-3">
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-950/60 text-pink-600 dark:text-pink-300 text-xs font-extrabold rounded-lg uppercase">Change</span>
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Perubahan yang Ingin Dilakukan Ke Depannya</h3>
+                                </div>
+                                <div class="p-5 bg-pink-100/60 dark:bg-pink-950/20 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm">
+                                    <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                        Setelah mengikuti perkuliahan ini, saya ingin mengubah kebiasaan saya dengan selalu membiasakan pelaksanaan asesmen awal sebelum merancang kegiatan pembelajaran agar memiliki dasar yang lebih jelas. Selain itu, saya ingin lebih peka terhadap hasil asesmen dan tidak berhenti pada pengumpulan data semata. Apabila ditemukan perbedaan kemampuan atau kebutuhan antar murid, saya berkomitmen memanfaatkannya dalam menentukan strategi, pendampingan, maupun tindak lanjut pembelajaran sehingga setiap keputusan diambil berdasarkan kondisi nyata murid.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan (Lg: 5): Tempelan Embed File Google Docs Refleksi LK 2 -->
+                    <div class="lg:col-span-5 glass p-6 rounded-3xl border border-pink-200 dark:border-pink-900/40 shadow-lg space-y-4">
+                        <div class="flex items-center justify-between border-b border-pink-100 dark:border-pink-950 pb-3">
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-950 text-pink-600 dark:text-pink-300 text-xs font-bold rounded-xl">Dokumen LK 2</span>
+                            <i class="fas fa-file-word text-pink-400 text-xl"></i>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold text-base text-slate-900 dark:text-white mb-1">LK 2 Refleksi Pengalaman Belajar</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Berkas resmi refleksi Pembelajaran Mendalam dan Asesmen</p>
+                        </div>
+
+                        <!-- TEMPELAN EMBED GOOGLE DOCS PREVIEW REFLEKSI 4C -->
+                        <div class="w-full h-96 rounded-2xl overflow-hidden border border-pink-200 dark:border-pink-900/50 bg-slate-100 dark:bg-slate-900 shadow-inner">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1yoe8l7HynNVxHwNbMbwNJNaCOWIKw5KO/preview" 
+                                class="w-full h-full border-0" 
+                                loading="lazy" 
+                                title="Preview Dokumen Google Docs Refleksi LK 2">
+                            </iframe>
+                        </div>
+
+                        <div class="pt-2 flex flex-col sm:flex-row gap-2">
+                            <button onclick="openPreview('https://docs.google.com/document/d/1yoe8l7HynNVxHwNbMbwNJNaCOWIKw5KO/preview', 'Dokumen LK 2: Refleksi Pembelajaran Mendalam dan Asesmen')" class="flex-1 py-2.5 px-4 bg-pink-500 hover:bg-pink-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2 shadow-md shadow-pink-500/20">
+                                <i class="fas fa-expand"></i> Perbesar Dokumen
+                            </button>
+                            <a href="https://docs.google.com/document/d/1yoe8l7HynNVxHwNbMbwNJNaCOWIKw5KO/edit" target="_blank" class="flex-1 py-2.5 px-4 bg-white/80 dark:bg-slate-800 text-pink-600 dark:text-pink-300 rounded-xl text-xs font-semibold hover:bg-pink-50 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 border border-pink-200 dark:border-pink-900/50">
+                                <i class="fas fa-external-link-alt text-[10px]"></i> Buka Google Docs
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SEKSI 2: ANALISIS ARTEFAK PEMBELAJARAN (EMBED PREVIEW + PINK CARDS 1 PARAGRAF) -->
+            <section data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                        <span class="w-2.5 h-7 bg-pink-500 rounded-full inline-block"></span>
+                        Analisis Artefak Pembelajaran
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Dokumentasi bukti dukung Lembar Kerja 1.1 Asesmen Awal dan Analisis Reflektifnya</p>
+                </div>
+
+                <!-- Grid Artefak & Analisis -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+                    
+                    <!-- Kolom Kiri: Tampilan Tempelan File Artefak (Embed Preview Single File Drive LK 1.1) -->
+                    <div class="lg:col-span-5 glass p-6 rounded-3xl border border-pink-200 dark:border-pink-900/40 shadow-lg space-y-4">
+                        <div class="flex items-center justify-between border-b border-pink-100 dark:border-pink-950 pb-3">
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-950 text-pink-600 dark:text-pink-300 text-xs font-bold rounded-xl">Artefak Bukti Dukung</span>
+                            <i class="fab fa-google-drive text-pink-400 text-xl"></i>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold text-base text-slate-900 dark:text-white mb-1">LK 1.1 Asesmen Awal & Pemetaan Belajar</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Pelaksanaan Asesmen Awal Kognitif & Non-Kognitif Kelas VIII F, VIII G, dan VIII H</p>
+                        </div>
+
+                        <!-- TEMPELAN PREVIEW DOKUMEN DRIVE LK 1.1 -->
+                        <div class="w-full h-96 rounded-2xl overflow-hidden border border-pink-200 dark:border-pink-900/50 bg-slate-100 dark:bg-slate-900 shadow-inner">
+                            <iframe 
+                                src="https://drive.google.com/file/d/1com3lnfZ7cwe9NP8glh0IypVbeZEYkwa/preview" 
+                                class="w-full h-full border-0" 
+                                loading="lazy" 
+                                title="Preview LK 1.1 Pelaksanaan Asesmen Awal">
+                            </iframe>
+                        </div>
+
+                        <div class="pt-2 flex flex-col sm:flex-row gap-2">
+                            <button onclick="openPreview('https://drive.google.com/file/d/1com3lnfZ7cwe9NP8glh0IypVbeZEYkwa/preview', 'LK 1.1 Pelaksanaan Asesmen Awal dan Pemetaan Kebutuhan Belajar Murid')" class="flex-1 py-2.5 px-4 bg-pink-500 hover:bg-pink-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2 shadow-md shadow-pink-500/20">
+                                <i class="fas fa-expand"></i> Perbesar Preview
+                            </button>
+                            <a href="https://drive.google.com/file/d/1com3lnfZ7cwe9NP8glh0IypVbeZEYkwa/view?usp=drive_link" target="_blank" class="flex-1 py-2.5 px-4 bg-white/80 dark:bg-slate-800 text-pink-600 dark:text-pink-300 rounded-xl text-xs font-semibold hover:bg-pink-50 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 border border-pink-200 dark:border-pink-900/50">
+                                <i class="fas fa-external-link-alt text-[10px]"></i> Buka File Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan: Teks Analisis Artefak Utuh Dipadatkan (Pink Cards 1 Paragraf) -->
+                    <div class="lg:col-span-7 space-y-6">
+                        
+                        <!-- Card 1: Deskripsi Artefak -->
+                        <div class="p-6 bg-pink-100/60 dark:bg-pink-950/40 rounded-3xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm space-y-2">
+                            <h4 class="font-bold text-pink-700 dark:text-pink-300 text-sm sm:text-base flex items-center gap-2">
+                                <i class="fas fa-file-alt"></i> Artefak Pembelajaran Pilihan
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                Artefak yang saya pilih adalah LK 1.1 tentang Pelaksanaan Asesmen Awal dan Pemetaan Kebutuhan Belajar Murid. LK 1.1 ini memuat seluruh proses pelaksanaan asesmen awal pada beberapa kelas, mulai dari penyusunan instrumen yang digunakan, pengumpulan data hasil asesmen kognitif dan non-kognitif, pengolahan dan analisis data, hingga pemetaan kondisi nyata murid. Selain itu, dokumen ini dilengkapi dengan analisis perbedaan karakteristik hasil belajar pada kelas VIII F, VIII G, dan VIII H serta rekomendasi tindak lanjut pembelajaran secara spesifik.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: Alasan Pemilihan -->
+                        <div class="p-6 bg-pink-100/60 dark:bg-pink-950/40 rounded-3xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm space-y-2">
+                            <h4 class="font-bold text-pink-700 dark:text-pink-300 text-sm sm:text-base flex items-center gap-2">
+                                <i class="fas fa-question-circle"></i> Alasan Pemilihan Artefak
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                Saya memilih LK 1.1 karena artefak ini paling erat kaitannya dengan pengalaman yang saya ceritakan dalam refleksi, di mana saya mengalami langsung proses asesmen awal sebelum pembelajaran dan membuktikan bahwa hasil antar kelas tidak selalu sama. Melalui pengolahan data asesmen ini, cara pandang saya bergeser dari yang semula menilai kelas secara kasatmata menjadi pemahaman yang jauh lebih komprehensif mengenai kesiapan serta hambatan belajar siswa, sehingga mampu menjembatani konsep teoritis perkuliahan dengan praktik kontekstual PPL.
+                            </p>
+                        </div>
+
+                        <!-- Card 3: Bagian Pendukung Refleksi -->
+                        <div class="p-6 bg-pink-100/60 dark:bg-pink-950/40 rounded-3xl border border-pink-200/80 dark:border-pink-900/40 shadow-sm space-y-2">
+                            <h4 class="font-bold text-pink-700 dark:text-pink-300 text-sm sm:text-base flex items-center gap-2">
+                                <i class="fas fa-check-circle"></i> Bagian Artefak yang Mendukung Refleksi
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                                Bagian yang paling mendukung tercermin pada hasil analisis dan pemetaan kebutuhan belajar murid di mana terungkap adanya pola kesulitan konsisten pada pemahaman fungsi AVERAGE dan MAX di beberapa kelas. Selain itu, bagian rekomendasi tindak lanjut secara konkret membuktikan bahwa data asesmen tidak berhenti sebagai sekadar angka penilaian, melainkan difungsikan secara aktif untuk merancang penguatan, pendampingan berdiferensiasi, serta penyesuaian strategi mengajar sesuai kebutuhan nyata murid.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal Preview Dokumen Layar Penuh -->
+    <div id="previewModal" class="fixed inset-0 z-[110] bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-5xl h-[90vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-pink-200 dark:border-pink-900/50">
+            <div class="p-4 sm:p-5 bg-pink-50/50 dark:bg-slate-800/50 border-b border-pink-100 dark:border-pink-950 flex items-center justify-between">
+                <h3 id="previewTitle" class="font-bold text-slate-900 dark:text-white text-base sm:text-lg flex items-center gap-2">
+                    <i class="fas fa-file-alt text-pink-500"></i> Pratinjau Dokumen
+                </h3>
+                <button onclick="closePreview()" class="w-9 h-9 bg-pink-100 dark:bg-slate-800 hover:bg-pink-500 hover:text-white text-slate-600 dark:text-slate-300 rounded-full transition-colors flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex-1 bg-slate-100 dark:bg-slate-950 relative">
+                <iframe id="previewIframe" src="" class="w-full h-full border-0" loading="lazy" title="Preview Frame"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                setTimeout(() => loader.style.display = 'none', 500);
+            }
+        });
+
+        function switchTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('text-slate-600', 'dark:text-slate-300');
+            });
+
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.classList.remove('text-slate-600', 'dark:text-slate-300');
+            }
+        }
+
+        function openPreview(url, title) {
+            const modal = document.getElementById('previewModal');
+            const iframe = document.getElementById('previewIframe');
+            const titleElem = document.getElementById('previewTitle');
+
+            if (modal && iframe && titleElem) {
+                iframe.src = url;
+                titleElem.innerHTML = `<i class="fas fa-file-alt text-pink-500"></i> ${title}`;
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function closePreview() {
+            const modal = document.getElementById('previewModal');
+            const iframe = document.getElementById('previewIframe');
+
+            if (modal && iframe) {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    iframe.src = '';
+                }, 300);
+            }
+        }
+    </script>
+</body>
+</html>
